@@ -105,13 +105,13 @@ bot.action("Dr Pepper", (ctx, next) => {
 
 bot.action("plain", async ctx => {
 	await ctx.answerCbQuery('good');
-	await ctx.editMessageCaption(
-		"Caption",
-		Markup.inlineKeyboard([
-			Markup.button.callback("Plain", "plain"),
-			Markup.button.callback("Italic", "italic"),
-		]),
-	);
+	// await ctx.editMessageCaption(
+	// 	"Caption",
+	// 	Markup.inlineKeyboard([
+	// 		Markup.button.callback("Plain", "plain"),
+	// 		Markup.button.callback("Italic", "italic"),
+	// 	]),
+	// );
 });
 
 bot.action("italic", async ctx => {
