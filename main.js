@@ -104,7 +104,7 @@ bot.action("Dr Pepper", (ctx, next) => {
 });
 
 bot.action("plain", async ctx => {
-	await ctx.answerCbQuery();
+	await ctx.answerCbQuery('good');
 	await ctx.editMessageCaption(
 		"Caption",
 		Markup.inlineKeyboard([
